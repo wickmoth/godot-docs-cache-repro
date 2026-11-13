@@ -1,0 +1,18 @@
+A: 4.7.1.stable.official.a13da4feb  (4.7.1-stable)
+B: 4.7.2.stable.official.ed1daf0bf  (4.7.2-stable)
+os: Linux 6.12.93 x86_64, NixOS 25.11 (Xantusia)
+cpu: 7 x 11th Gen Intel(R) Core(TM) i7-11700K @ 3.60GHz
+godot user folders: ./godot-user (XDG_DATA_HOME, XDG_CONFIG_HOME, XDG_CACHE_HOME)
+rounds: 5
+
+round 1: A (no cache) exit 0 | B (A's cache editor_doc_cache-4.7.res) exit 134 (CRASHED, signal 6) | B again exit 0
+round 2: A (no cache) exit 0 | B (A's cache editor_doc_cache-4.7.res) exit 134 (CRASHED, signal 6) | B again exit 0
+round 3: A (no cache) exit 0 | B (A's cache editor_doc_cache-4.7.res) exit 134 (CRASHED, signal 6) | B again exit 0
+round 4: A (no cache) exit 0 | B (A's cache editor_doc_cache-4.7.res) exit 134 (CRASHED, signal 6) | B again exit 0
+round 5: A (no cache) exit 0 | B (A's cache editor_doc_cache-4.7.res) exit 134 (CRASHED, signal 6) | B again exit 0
+
+crashes / runs
+  A with no docs cache:        0/5
+  B with A's docs cache:       5/5
+  B again, with its own cache: 0/5
+logs: ./out
