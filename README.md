@@ -20,6 +20,18 @@ saved the new build's cache, so the next run is clean. That is why it looks
 intermittent: CI images, build servers and machines with more than one
 Godot build installed hit it on the first run after a switch.
 
+## Quick start
+
+```bash
+git clone https://github.com/wickmoth/godot-docs-cache-repro.git
+cd godot-docs-cache-repro
+./run.sh
+```
+
+It downloads Godot 4.7.1 and 4.7.2 (about 300 MB) into the repo, runs 5
+rounds and prints how many runs crashed. Expect `B with A's docs cache: 5/5`.
+Nothing outside the repo folder is touched.
+
 ## What the script does
 
 `run.sh` downloads two official Linux x86_64 builds into `./bin`, checks
