@@ -20,6 +20,9 @@ saved the new build's cache, so the next run is clean. That is why it looks
 intermittent: CI images, build servers and machines with more than one
 Godot build installed hit it on the first run after a switch.
 
+This repo's script and README were written with the help of an AI coding
+assistant; the crash, the runs and the results were checked by running them.
+
 ## Quick start
 
 ```bash
